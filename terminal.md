@@ -63,3 +63,17 @@
 | Commands | Uses |
 | --- | --- |
 | `nano [filename]` | open `filename` for editing (or create it if it doesn't exist |
+| `bash [file.sh]` | this will execute the commands in the file.sh |
+| `$@` | all of the command line parameters given to the script |
+
+**Pass filenames to script**
+
+`sort $@ | uniq > unique-lines.sh`; `bash unique-lines.sh original.txt`; The shell will replace `$@` with `original.txt` and processes 1 file
+
+**Shell script for loop**
+```
+for filename in $@
+do
+	function
+done
+```
