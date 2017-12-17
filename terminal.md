@@ -43,3 +43,13 @@
 | `{*.txt, *.pdf}` | wildcard matches any pdf and txt files |
 | `sort -r` | sort in reverse order |
 | `uniq` | removes adjacent duplicated lines |
+
+## Batch processing
+
+| Commands | Uses |
+| --- | --- |
+| `set` | get list of system environments |
+| `echo $[variable]` | get a variable's values |
+| `variable=dir/file.txt` | `variable` is a shell variable, you can reference `variable` using `$variable`, there should **not** be spacing before and after `=` |
+| `for var in 1 2 3; do echo $var; done`| this will loop through 1,2,3 and print 1,2,3 respectively |
+| `for f in $files; do echo $f; done` | notice that `$` operator is necessary |
