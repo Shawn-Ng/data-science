@@ -30,3 +30,16 @@
 | `grep [text] [file]` | selects all text from the files |
 | `paste` | merge lines of code |
 
+## Combining tools
+
+| Commands | Uses |
+| --- | --- |
+| `head [file] > output.txt` | redirection (>) save the head of file into `output.txt` file |
+| `head [file] \| tail output.txt` | pipe (\|) tells the shell to use the output of the command on the left as the input to the command on the right |
+| `wc` | word count |
+| `*` | wildcard, 0 or more |
+| `?` | wildcard, matches a single character |
+| `201[78]` | wildcard matches 2017 or 2018 |
+| `{*.txt, *.pdf}` | wildcard matches any pdf and txt files |
+| `sort -r` | sort in reverse order |
+| `uniq` | removes adjacent duplicated lines |
