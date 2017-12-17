@@ -14,3 +14,19 @@
 | `rm` | remove files |
 | `rmdir` | remove directory |
 
+## Manipulating data
+
+| Commands | Uses |
+| --- | --- |
+| `cat` | concatenate, print content of file |
+| `more` or `less` | page the output of a file |
+| `head` | prints the 1st few lines of a file |
+| `head -n 3` | prints the 1st 3 lines of a file |
+| `ls -R -F` | `-R` shows everything underneath a directory, no matter how deeply nested, `-F` shows append `*` to runnable program |
+| `man [command]` | shows manual of commands |
+| `cut -f -d` | select fields/columns (-f) and specifiy the delimiter (-d) of a file |
+| `history` | print a list of commands you have run recently |
+| `![commands]` | re-run the most recent use of that command |
+| `grep [text] [file]` | selects all text from the files |
+| `paste` | merge lines of code |
+
