@@ -1,4 +1,9 @@
 # Terminal commands
+1. [Manipulating files and directories](#manipulating-files-and-directories)
+2. [Manipulating data](#manipulating-data)
+3. [Combining tools](#combining-tools)
+4. [Batch processing](#batch-processing)
+5. [Creating new tools](#creating-new-tools)
 
 ## Manipulating files and directories
 
@@ -53,3 +58,7 @@
 | `variable=dir/file.txt` | `variable` is a shell variable, you can reference `variable` using `$variable`, there should **not** be spacing before and after `=` |
 | `for var in 1 2 3; do echo $var; done`| this will loop through 1,2,3 and print 1,2,3 respectively |
 | `for f in $files; do echo $f; done` | notice that `$` operator is necessary |
+
+## Creating new tools
+| Commands | Uses |
+| --- | --- |
