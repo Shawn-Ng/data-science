@@ -1,6 +1,6 @@
 # Data Science
-1. Terminal
-2. Python PySpark
+1. [Terminal](#terminal)
+2. [Python PySpark](#python-pyspark)
 
 ## Terminal
 - [My cheatsheet](terminal.md)

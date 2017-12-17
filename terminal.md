@@ -62,3 +62,4 @@
 ## Creating new tools
 | Commands | Uses |
 | --- | --- |
+| `nano [filename]` | open `filename` for editing (or create it if it doesn't exist |
