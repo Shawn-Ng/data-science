@@ -2,6 +2,7 @@
 Useful resources for data science
 
 ## Unix
+- [My cheatsheet](terminal.md)
 - [Unix_Reference](https://files.fosswire.com/2007/08/fwunixref.pdf)
 - [Unix_Cheatsheet](http://cheatsheetworld.com/programming/unix-linux-cheat-sheet/)
 - https://github.com/0nn0/terminal-mac-cheatsheet
