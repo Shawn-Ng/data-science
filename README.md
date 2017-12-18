@@ -8,6 +8,9 @@
 - [Unix_Cheatsheet](http://cheatsheetworld.com/programming/unix-linux-cheat-sheet/)
 - https://github.com/0nn0/terminal-mac-cheatsheet
 
+## Python Pandas
+- [Pandas cheatsheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/PandasPythonForDataScience+(1).pdf)
+
 ## Python PySpark
 - [PySpark RDD cheatsheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/PySpark_Cheat_Sheet_Python.pdf)
 - [PySpark SQL cheatsheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/PySpark_SQL_Cheat_Sheet_Python.pdf)
