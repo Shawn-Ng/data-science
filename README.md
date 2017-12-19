@@ -18,3 +18,7 @@
 	- https://stackoverflow.com/questions/36902665/saving-a-list-of-rows-to-a-hive-table-in-pyspark
 	- https://mingchen0919.github.io/learning-apache-spark/conversion-between-rdd-and-dataframe.html
 	- https://medium.com/@InDataLabs/converting-spark-rdd-to-dataframe-and-dataset-expert-opinion-826db069eb5
+
+## Python Matplotlib
+- [Matplotlib cheatsheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Matplotlib_Cheat_Sheet.pdf)
+
