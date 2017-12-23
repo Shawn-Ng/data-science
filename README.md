@@ -8,6 +8,9 @@
 - [Unix_Cheatsheet](http://cheatsheetworld.com/programming/unix-linux-cheat-sheet/)
 - https://github.com/0nn0/terminal-mac-cheatsheet
 
+## Python Numpy
+- [Numpy cheatsheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Numpy_Python_Cheat_Sheet.pdf)
+
 ## Python Pandas
 - [Pandas cheatsheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/PandasPythonForDataScience+(1).pdf)
 
@@ -22,3 +25,5 @@
 ## Python Matplotlib
 - [Matplotlib cheatsheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Matplotlib_Cheat_Sheet.pdf)
 
+## Python Seaborn
+- [Seaborn cheatsheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Seaborn_Cheat_Sheet.pdf)
