@@ -8,6 +8,9 @@
 - [Unix_Cheatsheet](http://cheatsheetworld.com/programming/unix-linux-cheat-sheet/)
 - https://github.com/0nn0/terminal-mac-cheatsheet
 
+## Python BeautifulSoup
+- [My cheatsheet](beautiful_soup.md)
+
 ## Python Numpy
 - [Numpy cheatsheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Numpy_Python_Cheat_Sheet.pdf)
 
