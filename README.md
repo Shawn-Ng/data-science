@@ -1,6 +1,11 @@
 # Data Science
 1. [Terminal](#terminal)
-2. [Python PySpark](#python-pyspark)
+2. [Python BeautifulSoup](#python-beautifulsoup)
+3. [Python Numpy](#python-numpy)
+4. [Python Pandas](#python-pandas)
+5. [Python PySpark](#python-pyspark)
+6. [Python Matplotlib](#python-matplotlib)
+7. [Python Seaborn](#python-seaborn)
 
 ## Terminal
 - [My cheatsheet](terminal.md)
