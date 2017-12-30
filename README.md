@@ -6,6 +6,7 @@
 5. [Python PySpark](#python-pyspark)
 6. [Python Matplotlib](#python-matplotlib)
 7. [Python Seaborn](#python-seaborn)
+8. [Jupyter](#jupyter-notebook)
 
 ## Terminal
 - [My cheatsheet](terminal.md)
@@ -35,3 +36,6 @@
 
 ## Python Seaborn
 - [Seaborn cheatsheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Seaborn_Cheat_Sheet.pdf)
+
+## Jupyter Notebook
+- [Jupyter cheatsheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Jupyter_Notebook_Cheat_Sheet.pdf)
