@@ -38,6 +38,8 @@
 
 ## Python Matplotlib
 - [Matplotlib cheatsheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Matplotlib_Cheat_Sheet.pdf)
+- [Python graph library](https://python-graph-gallery.com/)
+- [Cheatsheet](https://github.com/juliangaal/python-cheat-sheet/blob/master/Matplotlib/Matplotlib.md)
 
 ## Python Seaborn
 - [Seaborn cheatsheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Seaborn_Cheat_Sheet.pdf)
