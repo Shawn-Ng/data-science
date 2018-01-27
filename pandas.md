@@ -18,6 +18,7 @@
 | --- | --- |
 | `df.head() / df.tail()` | return first/last 5 rows |
 | `df.first() / df.last()` | return first/last rows |
+| `df.sample(n, frac)` | randomly select n/fraction of rows |
 | `df.idxmax() / df.idxmin()` | return maximum / minimum index value |
 | `df.columns` | return the columns |
 | `df.info()` | return the data types |
@@ -56,7 +57,7 @@
 | `df.swaplevel(0,1)` | swap col1 and col2, col2 is the 1st index and col1 is the 2nd index |
 | `df.reindex('col', method='ffill'\|'bfill')` | reindexing dataframe and fill missing values |
 | `df.sort_index()` | sort by labels along an axis |
-| `df.sort_values(by='Country')` | sort the values by country column |
+| `df.sort_values(by='Country', ascending)` | sort the values by country column |
 | `df.loc[:, 'col1':'col3']` | return all rows from col1 to col3 |
 | `df.loc['row1':'row3', :]` | return all cols from row1 to row3 |
 | `df.loc['row1':'row3', ['col1', 'col5']]` | return row1 to row3 for col1 & col5 |
@@ -80,6 +81,7 @@
 | `df.groupby('col')[['col1','col2']].agg({'col1':'count', 'col2':'sum'})` | return group count for col1 and group sum for col2 |
 | `df.groupby('col')[['col1','col2']].agg(func)` | return group values based on customized aggregation |
 | `dfGroupBy.groups.keys()` | return the keys of DataFrameGroupBy |
+| `df.drop(['col1', 'col2'], axis=1)` | drop col1 & col2 |
 | `df.drop_duplicates()` | drop duplicates |
 | `df.dropna(how='any')` | drop rows with NaNs |
 | `df.fillna(method)` | fill missing values |
