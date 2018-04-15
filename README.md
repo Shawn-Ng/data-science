@@ -7,6 +7,7 @@
 6. [Matplotlib](#matplotlib)
 7. [Seaborn](#seaborn)
 8. [Jupyter Notebook](#jupyter-notebook)
+9. [Others](#others)
 
 ## Terminal
 - [Terminal cheatsheet](/libraries/terminal.md)
@@ -19,7 +20,8 @@
 
 ## Numpy
 - https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Numpy_Python_Cheat_Sheet.pdf
-- [Numpy examples](/numpy)
+- [Numpy basics](/numpy/numpy-basic.ipynb)
+- [Financial concepts](/numpy/financial-concepts.ipynb)
 
 ## Pandas
 - [Pandas cheatsheet](/libraries/pandas.md)
@@ -46,3 +48,8 @@
 
 ## Jupyter Notebook
 - https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Jupyter_Notebook_Cheat_Sheet.pdf
+
+## Others
+- [Collections](/libraries/collections.ipynb)
+- [Selenium](/libraries/selenium.md)
+- [Time](/libraries/time.ipynb)
