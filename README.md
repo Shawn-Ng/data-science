@@ -10,7 +10,7 @@
 9. [Others](#others)
 
 ## Terminal
-- [Terminal cheatsheet](/libraries/terminal.md)
+- [Terminal cheatsheet](/terminal/terminal.md)
 - https://files.fosswire.com/2007/08/fwunixref.pdf
 - http://cheatsheetworld.com/programming/unix-linux-cheat-sheet/
 - https://github.com/0nn0/terminal-mac-cheatsheet
