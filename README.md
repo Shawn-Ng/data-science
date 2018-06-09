@@ -24,7 +24,7 @@
 - [Financial concepts](/numpy/financial-concepts.ipynb)
 
 ## Pandas
-- [Pandas cheatsheet](/libraries/pandas.md)
+- [Pandas cheatsheet](/pandas/pandas.md)
 - https://s3.amazonaws.com/assets.datacamp.com/blog_assets/PandasPythonForDataScience+(1).pdf
 - https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Pandas_Cheat_Sheet_2.pdf
 
