@@ -1,12 +1,22 @@
+
+# coding: utf-8
+
+# In[1]:
+
+
 import pyspark
 import pyspark.sql.functions as F
+
+spark = pyspark.sql.SparkSession.builder.master('local').getOrCreate()
+
+
+# In[2]:
 
 
 # def config_spark():
 #     '''
 #     Configure Spark
 #     '''
-    
 #     import pyspark
 #     import pyspark.sql.functions as F
 #     import pyspark.sql.types as T
@@ -28,7 +38,6 @@ def to_pandas(sparkDf, n=10):
     ------
     A Pandas dataframe
     '''
-    
     pdDf = sparkDf.limit(n).toPandas()
     return pdDf
 
@@ -50,7 +59,6 @@ def group_count_percent(sparkDf, cols, n=10, dfType='pandas'):
     ------
     A Pandas dataframe
     '''
-    
     df = sparkDf.groupBy(cols).count().orderBy('count', ascending=False)
     rowCount = sparkDf.count()
     
@@ -75,7 +83,6 @@ def info(sparkDf):
     ----------
     sparkDf: pyspark.sql.dataframe.DataFrame
     '''
-    
     print('The dataframe: {0}'.format(type(sparkDf)))
     print('Number of columns: {0}'.format(len(sparkDf.columns)))
     print('Number of rows: {0}'.format(sparkDf.count()))
@@ -97,12 +104,11 @@ def rename_columns(sparkDf, cols):
     ------
     A Spark dataframe
     '''
-    
     df = sparkDf.select([F.col(c).alias(cols.get(c,c)) for c in sparkDf.columns])
     return df
 
 
-def cols_statistics(sparkDf, n=10):
+def columns_statistics(sparkDf, n=10):
     '''
     Display Spark dataframe columns' statistics and return 2 lists
 
@@ -117,7 +123,6 @@ def cols_statistics(sparkDf, n=10):
     ------
     Lists of null-value and single-value columns. null-value list <= single-value list
     '''
-    
     info(sparkDf)
     nullValueCols, singleValueCols = [], []
     
@@ -153,7 +158,6 @@ def column_into_list(sparkDf, singleCol):
     ------
     A list
     '''
-    
     if col in sparkDf.columns:
         LIST = sparkDf.select(singleCol).toPandas()[col].values.tolist()
         return LIST
@@ -174,7 +178,6 @@ def column_into_set(sparkDf, singleCol):
     ------
     A set
     '''
-    
     SET = set(column_into_list(sparkDf, singleCol))
     return SET
 
@@ -219,7 +222,6 @@ def add_dummy_columns(sparkDf, cols, value):
     ------
     A Spark dataframe
     '''
-    
     df = sparkDf
     dummyCols = set(cols) - set(sparkDf.columns)
     for column in dummyCols:

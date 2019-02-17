@@ -1,3 +1,15 @@
+
+# coding: utf-8
+
+# In[1]:
+
+
+import pandas as pd
+
+
+# In[2]:
+
+
 def config_pandas_display():
     '''
     Configure Pandas display
@@ -129,7 +141,7 @@ def convert_string_to_DL(aStr):
 # PANDAS FUNCTION
 def add_type_columns(pandasDf):
     '''
-    Return Pandas dataframe where each columns has their type column
+    Return Pandas dataframe where each columns has their type column right next to it
     
     Parameter
     ---------
@@ -142,9 +154,13 @@ def add_type_columns(pandasDf):
     '''
     suffix = '_type'
     for column in pandasDf.columns:
-        if not column.endswith(suffix):
-            newColumn = column+suffix
-            pandasDf[newColumn] = pandasDf[column].apply(lambda x: type(x))
+        # To prevent creating (1) duplicated column (2) column with ever-increasing suffix [xxx_type, xxx_type_type ...]
+        newCol = column+suffix
+        if not (newCol in pandasDf.columns or column.endswith(suffix)):
+            newColLoc = pandasDf.columns.get_loc(column)+1
+            newColValue = pandasDf[column].apply(lambda x: type(x))
+            pandasDf.insert(newColLoc, column=newCol, value=newColValue)
+            # pandasDf[newCol] = pandasDf[column].apply(lambda x: type(x))
     return pandasDf
 
 
@@ -173,3 +189,26 @@ def compare_all_list_items(aList):
 
     df = pd.DataFrame(result, columns=['item1','item2','comparison'])
     return df
+
+
+def head_tail(pandasDf):
+    '''
+    Print the Pandas dataframe first n head and last n tail
+    
+    Parameter
+    ---------
+    pandasDf: pandas.core.frame.DataFrame
+        One Pandas dataframe
+        
+    Return
+    ------
+    A Pandas dataframe
+    '''
+    import pandas as pd
+    
+    if not isinstance(pandasDf, (pd.DataFrame)):
+        raise ValueError('pandasDf must be a Pandas dataframe')
+    
+    result = pandasDf.head().append(pandasDf.tail())
+    return result
+
