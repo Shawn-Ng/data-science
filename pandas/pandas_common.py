@@ -10,28 +10,6 @@ import pandas as pd
 # In[2]:
 
 
-def config_pandas_display():
-    '''
-    Configure Pandas display
-    '''
-    import pandas as pd
-    pd.set_option('display.max_columns', 500)
-    pd.set_option('display.max_colwidth', -1)
-    pd.set_option('display.max_rows', 200)
-    pd.set_option('display.expand_frame_repr', True)
-
-
-def reset_pandas_display():
-    '''
-    Reset Pandas display
-    '''
-    import pandas as pd
-    pd.set_option('display.max_columns', 20)
-    pd.set_option('display.max_colwidth', 50)
-    pd.set_option('display.max_rows', 60)
-    pd.set_option('display.expand_frame_repr', True)
-
-
 # PURE PYTHON FUNCTION
 def clean_string_literal(aStr):
     '''
@@ -135,9 +113,56 @@ def convert_string_to_DL(aStr):
         result = ast.literal_eval(clean_string_literal(aStr))
     
     return result
-    
 
-# PANDAS FUNCTION
+
+def print_function(strFunction):
+    '''
+    Print string function and its output nicely
+    
+    Parameter
+    ---------
+    strFunction: str
+        String representation of a function
+    
+    Return
+    ------
+    Nicely formatted print output
+    '''
+    #print(func)
+    #print(eval(func))
+    print('{0}: {1}'.format(strFunction, eval(strFunction)))
+
+
+
+
+
+'''PANDAS CONFIGURATION'''
+def config_pandas_display():
+    '''
+    Configure Pandas display
+    '''
+    import pandas as pd
+    pd.set_option('display.max_columns', 500)
+    pd.set_option('display.max_colwidth', -1)
+    pd.set_option('display.max_rows', 200)
+    pd.set_option('display.expand_frame_repr', True)
+
+
+def reset_pandas_display():
+    '''
+    Reset Pandas display
+    '''
+    import pandas as pd
+    pd.set_option('display.max_columns', 20)
+    pd.set_option('display.max_colwidth', 50)
+    pd.set_option('display.max_rows', 60)
+    pd.set_option('display.expand_frame_repr', True)
+
+
+
+
+
+'''PANDAS FUNCTION'''
 def add_type_columns(pandasDf):
     '''
     Return Pandas dataframe where each columns has their type column right next to it
