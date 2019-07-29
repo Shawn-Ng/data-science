@@ -1,0 +1,58 @@
+= SQL tips
+:encoding: utf-8
+:lang: en
+:layout: docs
+:toc:
+:toclevels: 6
+:toc-placement!:
+:nofooter:
+
+toc::[]
+
+== PostgreSQL
+=== Regex
+[source,sql]
+----
+SELECT id,
+    regexp_matches(column, 'NAME:.*?\n.*?Synonyms:(.+?)\n', 'g') reg,
+FROM t1;
+----
+
+=== JSON
+[source,sql]
+----
+SELECT (column::json) -> 'level1.key1' ->> 'level2.key1' AS desired_value 
+FROM t1 
+WHERE ((column::json) -> 'level1.key1' ->> 'level2.key1')::text != specific_string_text;
+----
+
+=== SQL operator
+- `EXCEPT` instead of `MINUS`
+[source,sql]
+----
+SELECT * FROM t1
+EXCEPT
+SELECT * FROM t2;
+----
+
+=== JOIN
+- `ON` >= `USING`
+- https://www.postgresql.org/docs/9.2/queries-table-expressions.html
+- https://dba.stackexchange.com/questions/16409/using-construct-in-join-clause-can-introduce-optimization-barriers-in-certain-ca
+
+[source,sql]
+----
+
+----
+
+
+== Performance
+Subquery > CTE > Temporary table
+
+- https://medium.com/@hakibenita/be-careful-with-cte-in-postgresql-fca5e24d2119
+
+
+[source,sql]
+----
+EXPLAIN (ANALYZE ON, TIMING ON) QUERY
+----
