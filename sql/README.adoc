@@ -45,6 +45,10 @@ SELECT * FROM t2;
 
 ----
 
+=== Union all
+- https://codeburst.io/union-and-union-all-queries-in-postgresql-with-examples-213df90c0f17?gi=45676cab4901
+- https://stackoverflow.com/questions/13839878/postgresql-making-first-row-show-as-total-of-other-rows
+
 
 == Performance
 Subquery > CTE > Temporary table
